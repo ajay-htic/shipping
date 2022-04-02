@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="AviationShippingDashboard">
+        <div class="main-section container-fluid">
+        <section class="gfa-ds">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="gfa-ds-box">
+                            <div class="gfa-ds-box-title">
+                                <h4>Pending Shipment</h4>
+                                <span>
+                                    <img src="/aviation_shipping_dashboard/static/description/ds-icon-1.svg" alt="" />
+                                </span>
+                            </div>
+                            <div class="gfa-ds-box-contents">
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Incoming</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_pending_ship_incm"> <t t-esc="widget.pending_ship_incm" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Outgoing</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_pending_ship_out"> <t t-esc="widget.pending_ship_out" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Drop</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_pending_ship_drop"> <t t-esc="widget.pending_ship_drop" /></div></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="gfa-ds-box">
+                            <div class="gfa-ds-box-title">
+                                <h4>Awaiting Pick-up</h4>
+                                <span>
+                                    <img src="/aviation_shipping_dashboard/static/description/ds-icon-2.svg" alt="" />
+                                </span>
+                            </div>
+                            <div class="gfa-ds-box-contents">
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Incoming</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_awaiting_pickup_incm"> <t t-esc="widget.awaiting_pickup_incm" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Outgoing</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_awaiting_pickup_out"> <t t-esc="widget.awaiting_pickup_out" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Drop</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_awaiting_pickup_drop"> <t t-esc="widget.awaiting_pickup_drop" /></div></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="gfa-ds-box">
+                            <div class="gfa-ds-box-title">
+                                <h4>Picked Up</h4>
+                                <span>
+                                    <img src="/aviation_shipping_dashboard/static/description/ds-icon-3.svg" alt="" />
+                                </span>
+                            </div>
+                            <div class="gfa-ds-box-contents">
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Incoming</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_pickedup_incm"> <t t-esc="widget.pickedup_incm" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Outgoing</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_pickedup_out"> <t t-esc="widget.pickedup_out" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Drop</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_pickedup_drop"> <t t-esc="widget.pickedup_drop" /></div></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               <table style="height: 30px;"><tr><td></td></tr></table>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="gfa-ds-box">
+                            <div class="gfa-ds-box-title">
+                                <h4>In Transit</h4>
+                                <span>
+                                    <img src="/aviation_shipping_dashboard/static/description/ds-icon-4.svg" alt="" />
+                                </span>
+                            </div>
+                            <div class="gfa-ds-box-contents">
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Incoming</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_in_transit_incm"> <t t-esc="widget.in_transit_incm" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Outgoing</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_in_transit_out"> <t t-esc="widget.in_transit_out" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Drop</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_in_transit_drop"> <t t-esc="widget.in_transit_drop" /></div></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gfa-ds-box">
+                            <div class="gfa-ds-box-title">
+                                <h4>Arrived Destination</h4>
+                                <span>
+                                    <img src="/aviation_shipping_dashboard/static/description/ds-icon-5.svg" alt="" />
+                                </span>
+                            </div>
+                            <div class="gfa-ds-box-contents">
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Incoming</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_arrivred_dest_incm"> <t t-esc="widget.arrived_dest_incm" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Outgoing</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_arrivred_dest_out"> <t t-esc="widget.arrived_dest_out" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Drop</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_arrivred_dest_drop"> <t t-esc="widget.arrived_dest_drop" /></div></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gfa-ds-box">
+                            <div class="gfa-ds-box-title">
+                                <h4>Delivered</h4>
+                                <span>
+                                    <img src="/aviation_shipping_dashboard/static/description/ds-icon-6.svg" alt="" />
+                                </span>
+                            </div>
+                            <div class="gfa-ds-box-contents">
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Incoming</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_delivered_incm"> <t t-esc="widget.delivered_incm" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Outgoing</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_delivered_out"> <t t-esc="widget.delivered_out" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Drop</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_delivered_drop"> <t t-esc="widget.delivered_drop" /></div></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+                <table style="height: 30px;"><tr><td></td></tr></table>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="gfa-ds-box">
+                            <div class="gfa-ds-box-title">
+                                <h4>Return</h4>
+                                <span>
+                                    <img src="/aviation_shipping_dashboard/static/description/ds-icon-7.svg" alt="" />
+                                </span>
+                            </div>
+                            <div class="gfa-ds-box-contents gfa-box-co-return">
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Incoming</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_return_incm"> <t t-esc="widget.return_incm" /></div></h4>
+                                    </div>
+                                </div>
+                                <div class="gfa-ds-box-co-item">
+                                    <div class="gfa-ds-box-contents-title">
+                                        <h4>Outgoing</h4>
+                                    </div>
+                                    <div class="gfa-ds-box-contents-text">
+                                        <h4> <div  class="open_return_out"> <t t-esc="widget.return_out" /></div></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </t>
+
+</templates>
